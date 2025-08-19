@@ -445,12 +445,34 @@ html {
   animation: bounce 1s infinite;
 }
 
-.image6_container img{
-  width: 600px;
-  height: 700px;
-  object-fit: cover;
 
+.image6_container{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 80px;
 }
+.basketball_adjust img{
+  width: 160px;
+  height: 160px;
+  animation: bounceBall 16s ease-in-out forwards ;
+}
+
+@keyframes bounceBall{
+  0%   { transform: translateY(0px); }    /* thả từ trên xuống */
+  20%  { transform: translateY(500px); }  /* chạm đất (100m ~ 100px) */
+  30%  { transform: translateY(220px); }   /* nảy lên H1 = 56m (100-56=44px từ mặt đất) */
+  40%  { transform: translateY(500px); }  /* rơi xuống lại */
+  50%  { transform: translateY(345px); }   /* nảy lên H2 = 31m */
+  60%  { transform: translateY(500px); }  
+  70%  { transform: translateY(415px); }   /* nảy lên H3 = 17m */
+  80%  { transform: translateY(500px); }  
+  85%  { transform: translateY(460px); }   /* nảy lên H4 ≈ 8m */
+  90%  { transform: translateY(500px); }  
+  95%  { transform: translateY(485px); }   /* nảy nhỏ (≈ 3m) */
+  100% { transform: translateY(500px); }
+}
+
+
 
 
 
