@@ -1,16 +1,16 @@
-/* 
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-} */
+  /* box-sizing: border-box; */
+}
 p {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
-
-header {
-
+h2 {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .header_nav {
@@ -40,7 +40,11 @@ header {
   font-size: 30px;
   flex-wrap: wrap;
   list-style: none;
+  animation: flicker 2s infinite alternate;
+
+
 }
+
 
 .header_List li a {
   text-decoration: none;
@@ -55,7 +59,13 @@ header {
   font-family: "";
   flex-wrap: wrap;
   list-style: none;
+  animation: flicker 2s infinite alternate;
 
+}
+@keyframes flicker {
+  0%   { opacity: 1; text-shadow: 0 0 5px #0ff, 0 0 10px #0ff; }
+  50%  { opacity: 0.7; text-shadow: 0 0 2px #0ff; }
+  100% { opacity: 1; text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
 }
 
 .header_Contact a {
@@ -133,7 +143,8 @@ header {
 }
 
 .section_3,
-.section_4 {
+.section_4,
+.section_5 {
   padding-top: 50px;
   display: flex;
   align-items: center;
@@ -144,23 +155,22 @@ header {
 }
 
 .section_3p,
-.section_4p {
+.section_4p,
+.section_5p {
 
   font-size: 50px;
-  font-family: "Philosopher";
   color: #111827;
 
 }
 
 .section_3a,
 .section_4a {
-  font-family: "Philosopher";
   font-size: 50px;
 }
 
 .border_3,
 .border_4 {
-  
+
   width: 80%;
   height: 2px;
   background-color: #111827;
@@ -176,18 +186,23 @@ header {
   margin-top: 60px;
 }
 
-.image3_container {
+.image3_container{
   display: flex;
   flex-direction: row;
   gap: 200px;
   flex-wrap: wrap;
+  
 }
 
-.image3_container img {
+.image3_container img{
   width: 300px;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
+  transition: transform 0.3s;
+}
+.image3_container img:hover {
+  transform: scale(1.3);
 }
 
 .section_3bp {
@@ -263,10 +278,12 @@ header {
 }
 
 .section_funfact,
-.section_skill {
+.section_skill,
+.section_activity {
 
   background-color: #111827;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 
@@ -285,7 +302,8 @@ header {
 }
 
 .section_funfact p,
-.section_skill p {
+.section_skill p,
+.section_activity p {
   margin-left: 30px;
   font-size: 30px;
   color: #F9FAFB;
@@ -305,7 +323,7 @@ header {
   border-radius: 5%;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 550px;
   align-items: center;
 }
 
@@ -326,7 +344,8 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 500px;
+  gap: 250px;
+
 }
 
 .footer_background {
@@ -343,13 +362,95 @@ html {
   scroll-behavior: smooth;
 }
 
-.section_things{
+.section_things {
 
   margin-top: 100px;
   display: flex;
   gap: 20px;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   padding: 40px;
-  background-color:   ;
+  background-color: #111827;
 }
+
+.section_things p {
+  color: #E5E7EB;
+  font-size: 30px;
+}
+.typing {
+  color: #E5E7EB;
+  font-size: 80px;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #10B981; 
+  width: 0;
+  animation: typing 4s steps(12, end) forwards,
+             blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 12ch } 
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+.game_image_container{
+  border: solid black 5px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  align-items: center;
+}
+.game_image_container img{
+  width: 500px;
+  height: 400px;
+  object-fit: fill;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+.game_image{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.game_image_container img:hover {
+  transform: scale(1.08);
+  animation: fire-glow 1.5s infinite;
+}
+@keyframes fire-glow {
+  0% { box-shadow: 0 0 20px 5px #ff4500; }
+  50% { box-shadow: 0 0 40px 15px #ffae42; }
+  100% { box-shadow: 0 0 20px 5px #ff4500; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
+
+.basketball_title {
+  font-size: 65px;
+  font-weight: 900;
+  text-align: center;
+  color: #ff7518;
+  text-shadow: 0 0 10px #ff4500, 0 0 20px #ff7518, 0 0 30px #000;
+  animation: bounce 1s infinite;
+}
+
+.image6_container img{
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+
+}
+
+
+
