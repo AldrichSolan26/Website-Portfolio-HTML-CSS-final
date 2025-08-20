@@ -1,15 +1,16 @@
-
 * {
   padding: 0;
   margin: 0;
   /* box-sizing: border-box; */
 }
+
 p {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
+
 h2 {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
@@ -31,7 +32,6 @@ h2 {
 }
 
 .header_List {
-  /* margin-top: 30px; */
   display: flex;
   justify-content: space-evenly;
   width: 60%;
@@ -41,7 +41,6 @@ h2 {
   flex-wrap: wrap;
   list-style: none;
   animation: flicker 2s infinite alternate;
-
 
 }
 
@@ -62,10 +61,22 @@ h2 {
   animation: flicker 2s infinite alternate;
 
 }
+
 @keyframes flicker {
-  0%   { opacity: 1; text-shadow: 0 0 5px #0ff, 0 0 10px #0ff; }
-  50%  { opacity: 0.7; text-shadow: 0 0 2px #0ff; }
-  100% { opacity: 1; text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  }
+
+  50% {
+    opacity: 0.7;
+    text-shadow: 0 0 2px #0ff;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+  }
 }
 
 .header_Contact a {
@@ -144,7 +155,8 @@ h2 {
 
 .section_3,
 .section_4,
-.section_5 {
+.section_5,
+.section_6 {
   padding-top: 50px;
   display: flex;
   align-items: center;
@@ -156,7 +168,8 @@ h2 {
 
 .section_3p,
 .section_4p,
-.section_5p {
+.section_5p,
+.section_6p {
 
   font-size: 50px;
   color: #111827;
@@ -186,21 +199,22 @@ h2 {
   margin-top: 60px;
 }
 
-.image3_container{
+.image3_container {
   display: flex;
   flex-direction: row;
   gap: 200px;
   flex-wrap: wrap;
-  
+
 }
 
-.image3_container img{
+.image3_container img {
   width: 300px;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
   transition: transform 0.3s;
 }
+
 .image3_container img:hover {
   transform: scale(1.3);
 }
@@ -362,7 +376,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.section_things {
+.section_things,
+.section_place {
 
   margin-top: 100px;
   display: flex;
@@ -373,31 +388,41 @@ html {
   background-color: #111827;
 }
 
-.section_things p {
+.section_things p,
+.section_place {
   color: #E5E7EB;
   font-size: 30px;
 }
+
 .typing {
   color: #E5E7EB;
   font-size: 80px;
   font-style: italic;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 4px solid #10B981; 
+  border-right: 4px solid #10B981;
   width: 0;
   animation: typing 4s steps(12, end) forwards,
-             blink 0.75s step-end infinite;
+    blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 12ch } 
+  from {
+    width: 0
+  }
+
+  to {
+    width: 12ch
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent }
+  50% {
+    border-color: transparent
+  }
 }
-.game_image_container{
+
+.game_image_container {
   border: solid black 5px;
   border-radius: 5%;
   display: flex;
@@ -406,14 +431,16 @@ html {
   height: 400px;
   align-items: center;
 }
-.game_image_container img{
+
+.game_image_container img {
   width: 500px;
   height: 400px;
   object-fit: fill;
   border-radius: 15px;
   transition: transform 0.3s;
 }
-.game_image{
+
+.game_image {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -421,19 +448,36 @@ html {
   justify-content: center;
   gap: 200px;
 }
+
 .game_image_container img:hover {
   transform: scale(1.08);
   animation: fire-glow 1.5s infinite;
 }
+
 @keyframes fire-glow {
-  0% { box-shadow: 0 0 20px 5px #ff4500; }
-  50% { box-shadow: 0 0 40px 15px #ffae42; }
-  100% { box-shadow: 0 0 20px 5px #ff4500; }
+  0% {
+    box-shadow: 0 0 20px 5px #ff4500;
+  }
+
+  50% {
+    box-shadow: 0 0 40px 15px #ffae42;
+  }
+
+  100% {
+    box-shadow: 0 0 20px 5px #ff4500;
+  }
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-16px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-16px);
+  }
 }
 
 .basketball_title {
@@ -446,33 +490,74 @@ html {
 }
 
 
-.image6_container{
+.image6_container {
   display: flex;
   flex-direction: row-reverse;
   gap: 80px;
 }
-.basketball_adjust img{
+
+.basketball_adjust img {
   width: 160px;
   height: 160px;
-  animation: bounceBall 16s ease-in-out forwards ;
+  animation: bounceBall 16s ease-in-out forwards infinite;
 }
 
-@keyframes bounceBall{
-  0%   { transform: translateY(0px); }    /* thả từ trên xuống */
-  20%  { transform: translateY(500px); }  /* chạm đất (100m ~ 100px) */
-  30%  { transform: translateY(220px); }   /* nảy lên H1 = 56m (100-56=44px từ mặt đất) */
-  40%  { transform: translateY(500px); }  /* rơi xuống lại */
-  50%  { transform: translateY(345px); }   /* nảy lên H2 = 31m */
-  60%  { transform: translateY(500px); }  
-  70%  { transform: translateY(415px); }   /* nảy lên H3 = 17m */
-  80%  { transform: translateY(500px); }  
-  85%  { transform: translateY(460px); }   /* nảy lên H4 ≈ 8m */
-  90%  { transform: translateY(500px); }  
-  95%  { transform: translateY(485px); }   /* nảy nhỏ (≈ 3m) */
-  100% { transform: translateY(500px); }
+.basketball_hoop img:hover {
+  transform: scale(1.08);
+  animation: fire-glow 1.5s infinite;
 }
 
+.basketball_hoop img {
+  width: 300px;
+  height: auto;
+}
 
+@keyframes bounceBall {
+  0% {
+    transform: translateY(0px);
+  }
 
+  20% {
+    transform: translateY(500px);
+  }
 
+  30% {
+    transform: translateY(220px);
+  }
 
+  40% {
+    transform: translateY(500px);
+  }
+
+  50% {
+    transform: translateY(345px);
+  }
+
+  60% {
+    transform: translateY(500px);
+  }
+
+  70% {
+    transform: translateY(415px);
+  }
+
+  80% {
+    transform: translateY(500px);
+  }
+
+  85% {
+    transform: translateY(460px);
+  }
+
+  90% {
+    transform: translateY(500px);
+  }
+
+  95% {
+    transform: translateY(485px);
+  }
+
+  100% {
+    transform: translateY(500px);
+  }
+}
