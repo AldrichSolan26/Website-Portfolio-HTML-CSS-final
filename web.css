@@ -3,15 +3,32 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px);}
-  to { opacity: 1; transform: translateY(0);}
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
 }
 
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
 }
+
 .letter-drop {
   display: inline-block;
   opacity: 0;
@@ -103,14 +120,22 @@ h3 {
   flex-wrap: wrap;
   list-style: none;
 
-
 }
-@keyframes header{
-  0% { box-shadow: 0 0 5px #FFD700;}
-  50% { box-shadow: 0 0 20px #FFD700;}
-  100% { box-shadow: 0 0 5px #FFD700;}
-} 
-  
+
+@keyframes header {
+  0% {
+    box-shadow: 0 0 5px #FFD700;
+  }
+
+  50% {
+    box-shadow: 0 0 20px #FFD700;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #FFD700;
+  }
+}
+
 
 
 
@@ -134,7 +159,8 @@ h3 {
   flex-direction: column-reverse;
   padding: 100px;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -187,7 +213,7 @@ html{
   border-radius: 50%;
   object-fit: cover;
   justify-self: center;
-  border: 5px solid #facc15; 
+  border: 5px solid #facc15;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -196,29 +222,37 @@ html{
 .education img:hover,
 .dailylife img:hover,
 .font_skills_learned img:hover,
-.font_basketball img:hover{
+.font_basketball img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(250, 204, 21, 0.8); 
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.8);
 }
+
 .luxury_watch {
   /* justify-self: right; */
   justify-items: right;
 }
 
 @keyframes glow {
-  from { filter: drop-shadow(0 0 5px gold); }
-  to   { filter: drop-shadow(0 0 20px gold); }
+  from {
+    filter: drop-shadow(0 0 5px gold);
+  }
+
+  to {
+    filter: drop-shadow(0 0 20px gold);
+  }
 }
-.luxury_watch img{
+
+.luxury_watch img {
   position: absolute;
   width: 300px;
   height: auto;
-  top: 1700px;   
-  right: 50px;  
+  top: 1700px;
+  right: 50px;
   animation: glow 2s ease-in-out infinite alternate;
 }
+
 .section_myself {
-  top:auto;
+  top: auto;
   display: flex;
   gap: 170px;
   justify-content: space-evenly;
@@ -227,26 +261,27 @@ html{
 
 .ethnicity,
 .dailylife,
-.education{
+.education {
   width: 300px;
 
 }
 
 .text_box {
-  background: #111; 
-  border-radius: 15px;     
-  padding: 20px;
+  background: #111;
+  border-radius: 15px;
+  /* padding: 20px; */
   margin: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .ethnicity p,
 .dailylife p,
-.education p{
- color: #F5F5F5;
+.education p {
+  color: #F5F5F5;
   font-size: 16px;
   text-align: center;
 }
+
 .section_p2 {
   font-size: 24px;
   text-align: center;
@@ -269,71 +304,140 @@ html{
   height: 500px;
   object-fit: cover;
 }
+
 .font_computer {
   background-color: #121212;
   display: flex;
   align-items: center;
-  gap:60px;
+  gap: 60px;
   padding: 80px;
 }
-.font_basketball{
+
+.font_basketball {
   background-color: #121212;
   text-align: center;
   width: 900px;
   display: flex;
   flex-direction: column;
-  gap:40px;
+  gap: 40px;
   padding: 80px;
 }
 
+.font_halongbay {
+  color: #F5F5F5;
+  font-size: 20px;
+  margin: 0 200px 0px 200px;
+}
+.font_plan img{
+  width: 300px;
+  height: auto;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 5px solid #facc15;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+.font_plan {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  padding: 200px 0 100px 0;
+}
+.font_plan table tr th {
+  color: #D4Af37;
+  font-size: 24px;
+}
+.sticker_plane{
+  position: absolute;
+  right: 500px;
+  top: 1450px;
+}
+.sticker_halongbay{
+  position: absolute;
+  left:500px;
+  top: 1450px;
+}
+.sticker_yacht{
+  position: absolute;
+  right:80px;
+  top: 2000px;
+  transform: rotate(-5deg)
+}
+
+.sticker_halongbay img,
+.sticker_plane img,
+.sticker_yacht img{
+  height: auto;
+  width: 200px;
+  object-fit: cover;
+}
+.font_plan table tr td {
+  color: #f5f5f5;
+  font-size: 20px;
+}
+
+.font_plan table tr {
+  background-color: #1F1F1F;
+  border-bottom: 1px solid #444;
+}
+
+table th:first-child,
+table td:first-child {
+  width: 20%;
+}
 
 .font_funfact,
 .font_skills_learned,
-.font_skills_pursueing
-{
+.font_skills_pursueing {
   background-color: #121212;
   padding: 30px;
   align-items: center;
 }
+
 .font_funfact p,
 .font_skills_learned p,
 .font_skills_pursueing p,
 .font_computer p,
-.font_basketball p{
-  color:#F5F5F5;
+.font_basketball p {
+  color: #F5F5F5;
   font-size: 22px;
 }
+
 .font_funfact h3,
 .font_skills_learned h3,
 .font_skills_pursueing h3,
 .font_computer h3,
-.font_basketball h3{
-  color:#D4Af37;
+.font_basketball h3 {
+  color: #D4Af37;
   font-size: 36px;
   text-align: center;
 }
-.basketball{
+
+.basketball {
   position: absolute;
-  top:1100px;
-  right:50px
+  top: 1100px;
+  right: 50px
 }
-.basketball img{
-  width:200px;
+
+.basketball img {
+  width: 200px;
   height: 200px;
   object-fit: cover;
 }
-.basketball1{
+
+.basketball1 {
   position: absolute;
-  left:0px; 
+  left: 0px;
   top: 1100px;
 }
-.button{
+
+.button {
   position: absolute;
   top: 1800px;
   left: 50px;
   /* background-color: #D4Af37; */
 }
-.button button{
+
+.button button {
   background-color: #D4Af37;
   color: #121212;
   font-size: 40px;
@@ -344,28 +448,32 @@ html{
   transition: box-shadow 0.3s;
   animation: glow 2s ease-in-out infinite alternate;
 }
-.basketball1 img{
-  width:200px;
+
+.basketball1 img {
+  width: 200px;
   height: 200px;
   object-fit: cover;
 }
-.sticker_basketball{
+
+.sticker_basketball {
   position: absolute;
   top: 1400px;
-  right:50px;
-  border:#FFD700 solid 3px;
+  right: 50px;
+  border: #FFD700 solid 3px;
 
 }
-.sticker_basketball img{
+
+.sticker_basketball img {
   width: 150px;
   height: auto;
   object-fit: fill;
 
 }
+
 .cards {
   position: absolute;
-  top: -40px;   
-  left: -80px;  
+  top: -40px;
+  left: -80px;
   width: 200px;
   height: 150px;
   gap: 50px;
@@ -388,15 +496,30 @@ html{
   border: 2px solid #333;
 }
 
-.cards div:nth-child(1) { transform: translateX(900%) rotate(-18deg); }
-.cards div:nth-child(2) { transform: translateX(1080%) rotate(18deg) translateY(400%); }
-.cards div:nth-child(3) { transform: translateX(0) rotate(18deg); }
-.cards div:nth-child(4) { transform: translateX(-50%) rotate(-6deg); }
-.cards div:nth-child(5) { transform: translateX(-100%) rotate(-30deg); }
+.cards div:nth-child(1) {
+  transform: translateX(900%) rotate(-18deg);
+}
+
+.cards div:nth-child(2) {
+  transform: translateX(1080%) rotate(18deg) translateY(400%);
+}
+
+.cards div:nth-child(3) {
+  transform: translateX(0) rotate(18deg);
+}
+
+.cards div:nth-child(4) {
+  transform: translateX(-50%) rotate(-6deg);
+}
+
+.cards div:nth-child(5) {
+  transform: translateX(-100%) rotate(-30deg);
+}
 
 .skills_spotlight,
 .myself,
-.things_and_hobbies{
+.things_and_hobbies,
+.favourite_place {
   padding-top: 50px;
   display: flex;
   align-items: center;
@@ -405,31 +528,36 @@ html{
   gap: 40px;
   background-color: #121212;
 }
+
 .title_unique_skills,
 .title_myself,
-.title_things_and_hobbies{
-   background-color: #FFD700;
+.title_things_and_hobbies,
+.title_favourite_place {
+  background-color: #FFD700;
   font-size: 50px;
   color: #0D0D0D;
   border: solid 10px #D4Af37;
   padding: 10px;
 }
-.layout_skills_learned{
+
+.layout_skills_learned {
   display: flex;
   align-items: center;
-  gap:20px;
+  gap: 20px;
 
 }
-.layout_skills_learned img{
+
+.layout_skills_learned img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
   justify-self: center;
-  border: 5px solid #facc15; 
+  border: 5px solid #facc15;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.font_skills_pursueing img{
+
+.font_skills_pursueing img {
   width: 250px;
   height: auto;
   border-radius: 5%;
@@ -437,37 +565,44 @@ html{
   justify-content: center;
   border: 5px solid #facc15;
   float: left;
-  margin:0 20px 20px 0;
+  margin: 0 20px 20px 0;
   animation: glow 2s ease-in-out infinite alternate;
 }
+
 .font_skills_pursueing p {
   text-align: justify;
 }
+
 footer {
   background-color: #0A0A0A;
-  padding:50px;
+  padding: 50px;
 }
-.layout_footer{
+
+.layout_footer {
   display: flex;
 }
-.layout_footer img{
+
+.layout_footer img {
   width: 50px;
   height: 50px;
   object-fit: cover;
   transition: 0.4ease;
 }
-.layout_footer img:hover{
+
+.layout_footer img:hover {
   transform: scale(1.2);
   filter: brightness(1.5);
 }
-.container_image_footer{
+
+.container_image_footer {
   display: flex;
   flex-direction: row;
   gap: 50px;
   margin-left: 50px;
 }
-.container_text_footer{
-  margin-left:800px;
+
+.container_text_footer {
+  margin-left: 800px;
   display: inline;
   flex-wrap: wrap;
 
@@ -493,6 +628,7 @@ footer {
 .places img:hover {
   transform: scale(1.1);
 }
+
 .typing {
   display: flex;
   justify-content: center;
@@ -528,4 +664,3 @@ footer {
     border-color: transparent
   }
 }
-
