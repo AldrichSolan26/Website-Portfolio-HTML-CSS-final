@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px);}
@@ -168,7 +168,7 @@ html{
 
 }
 
-.section_2 {
+.section_gif {
   background-color: #121212;
   display: flex;
   flex-direction: row;
@@ -180,7 +180,8 @@ html{
 }
 
 .education img,
-.dailylife img {
+.dailylife img,
+.font_basketball img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -194,7 +195,8 @@ html{
 .ethnicity img:first-of-type:hover,
 .education img:hover,
 .dailylife img:hover,
-.font_skills_learned img:hover {
+.font_skills_learned img:hover,
+.font_basketball img:hover{
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(250, 204, 21, 0.8); 
 }
@@ -267,30 +269,134 @@ html{
   height: 500px;
   object-fit: cover;
 }
+.font_computer {
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  gap:60px;
+  padding: 80px;
+}
+.font_basketball{
+  background-color: #121212;
+  text-align: center;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  padding: 80px;
+}
 
 
 .font_funfact,
 .font_skills_learned,
-.font_skills_pursueing {
+.font_skills_pursueing
+{
   background-color: #121212;
   padding: 30px;
-
+  align-items: center;
 }
 .font_funfact p,
 .font_skills_learned p,
-.font_skills_pursueing p {
+.font_skills_pursueing p,
+.font_computer p,
+.font_basketball p{
   color:#F5F5F5;
   font-size: 22px;
 }
 .font_funfact h3,
 .font_skills_learned h3,
-.font_skills_pursueing h3{
+.font_skills_pursueing h3,
+.font_computer h3,
+.font_basketball h3{
   color:#D4Af37;
   font-size: 36px;
   text-align: center;
 }
+.basketball{
+  position: absolute;
+  top:1100px;
+  right:50px
+}
+.basketball img{
+  width:200px;
+  height: 200px;
+  object-fit: cover;
+}
+.basketball1{
+  position: absolute;
+  left:0px; 
+  top: 1100px;
+}
+.button{
+  position: absolute;
+  top: 1800px;
+  left: 50px;
+  /* background-color: #D4Af37; */
+}
+.button button{
+  background-color: #D4Af37;
+  color: #121212;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  transition: box-shadow 0.3s;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+.basketball1 img{
+  width:200px;
+  height: 200px;
+  object-fit: cover;
+}
+.sticker_basketball{
+  position: absolute;
+  top: 1400px;
+  right:50px;
+  border:#FFD700 solid 3px;
+
+}
+.sticker_basketball img{
+  width: 150px;
+  height: auto;
+  object-fit: fill;
+
+}
+.cards {
+  position: absolute;
+  top: -40px;   
+  left: -80px;  
+  width: 200px;
+  height: 150px;
+  gap: 50px;
+  display: flex;
+}
+
+.cards div {
+  width: 80px;
+  height: 120px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 2px solid #333;
+}
+
+.cards div:nth-child(1) { transform: translateX(900%) rotate(-18deg); }
+.cards div:nth-child(2) { transform: translateX(1080%) rotate(18deg) translateY(400%); }
+.cards div:nth-child(3) { transform: translateX(0) rotate(18deg); }
+.cards div:nth-child(4) { transform: translateX(-50%) rotate(-6deg); }
+.cards div:nth-child(5) { transform: translateX(-100%) rotate(-30deg); }
+
 .skills_spotlight,
-.myself{
+.myself,
+.things_and_hobbies{
   padding-top: 50px;
   display: flex;
   align-items: center;
@@ -300,7 +406,8 @@ html{
   background-color: #121212;
 }
 .title_unique_skills,
-.title_myself{
+.title_myself,
+.title_things_and_hobbies{
    background-color: #FFD700;
   font-size: 50px;
   color: #0D0D0D;
@@ -367,7 +474,7 @@ footer {
 }
 
 
-.cards {
+.places {
   display: flex;
   flex-direction: row;
   gap: 200px;
@@ -375,7 +482,7 @@ footer {
 
 }
 
-.cards img {
+.places img {
   width: 300px;
   height: auto;
   border-radius: 12px;
@@ -383,20 +490,27 @@ footer {
   transition: transform 0.3s;
 }
 
-.cards img:hover {
+.places img:hover {
   transform: scale(1.1);
 }
-
 .typing {
-  color: #E5E7EB;
-  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing h3 {
+  color: #facc15;
+  font-size: 30px;
   font-style: italic;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 4px solid #10B981;
+  border-right: 4px solid #D4Af37;
   width: 0;
   animation: typing 4s steps(12, end) forwards,
     blink 0.75s step-end infinite;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @keyframes typing {
@@ -414,3 +528,4 @@ footer {
     border-color: transparent
   }
 }
+
