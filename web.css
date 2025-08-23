@@ -30,7 +30,6 @@ body {
 }
 
 .letter-drop {
-  display: inline-block;
   opacity: 0;
   transform: translateY(-50px);
   animation: letterDrop 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
@@ -45,18 +44,16 @@ body {
 }
 
 
+
+
+h3,
+h1,
 p {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
-h3 {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-}
-
 .header_nav {
-
   top: 0;
   right: 0;
   left: 0;
@@ -66,18 +63,489 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   background-color: #0D0D0D;
-  padding: 25px;
   z-index: 1000;
   flex-wrap: wrap;
+}
+
+.text {
+  display: inline;
+}
+
+.icon {
+  display: none;
+}
+
+.short_text {
+  display: none
+}
+
+.short_hobby {
+  display: none
+}
+
+.short_place {
+  display: none;
+}
+
+.short_contact {
+  display: none;
+}
+
+.full_contact {
+  display: inline;
+}
+
+.full_hobby {
+  display: inline;
+}
+
+.full_place {
+  display: inline;
+}
+
+.icon img {
+  height: auto;
+  object-fit: cover;
+  transition: 0.4s ease-out;
+  filter: drop-shadow(0 0 5px yellow) drop-shadow(0 0 10px yellow);
+}
+
+.icon img:hover {
+  transform: scale(1.2);
 
 }
+
+@media (max-width: 1440px) {
+  .section_backgroundImage img {
+    width: 350px;
+    height: 350px;
+  }
+  
+
+  .section_p {
+    font-size: 30px;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .icon {
+    display: inline;
+  }
+
+  .short_text {
+    display: inline;
+  }
+
+  .header_List {
+    font-size: 190%;
+
+  }
+
+  .header_Contact {
+    font-size: 300%;
+  }
+
+  .header_nav {
+    padding: 27px;
+  }
+
+  .icon img {
+    width: 40px;
+  }
+
+  .full_hobby {
+    display: none
+  }
+
+  .short_hobby {
+    display: inline
+  }
+
+  .gif2 img {
+    width: 350px;
+    height: 450px;
+  }
+  .luxury_watch {
+    display: none;
+  }
+
+  .title_unique_skills,
+  .title_myself,
+  .title_things_and_hobbies,
+  .title_favourite_place {
+    font-size: 40px;
+  }
+
+  .font_funfact p,
+  .font_skills_learned p,
+  .font_skills_pursueing p,
+  .font_computer p,
+  .font_basketball p {
+    font-size: 22px;
+  }
+
+  .font_funfact h3,
+  .font_skills_learned h3,
+  .font_skills_pursueing h3,
+  .font_computer h3,
+  .font_basketball h3 {
+    font-size: 30px;
+  }
+
+  .layout_skills_learned img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .flip-card {
+    float: left;
+  }
+
+  .layout_footer img {
+    width: 50px;
+    height: 50px;
+  }
+  .font_computer img{
+    width: 220px;
+    height: 220px;
+  }
+  .sticker_basketball,
+  .basketball{
+    display: none;
+  }
+  .basketball1{
+    left: 0%;
+    top: 80%;
+  }
+  .basketball1 img{
+    width: 65%;
+    height: 65%;
+  }
+
+
+}
+
+@media (min-width: 1441px) {
+  .section_backgroundImage img {
+    width: 400px;
+    height: 396px;
+  }
+  .basketball1 img{
+    width: 70%;
+    height: 70%;
+  }
+  .basketball1{
+    left: 5%;
+    top: 65%;
+  }
+  .container_text_footer {
+    right: 5%;
+  }
+
+  .font_funfact h3,
+  .font_skills_learned h3,
+  .font_skills_pursueing h3,
+  .font_computer h3,
+  .font_basketball h3 {
+    font-size: 36px;
+  }
+
+  div.dailylife {
+    margin-top: 200px;
+  }
+
+  div.education {
+    margin-top: 400px;
+  }
+
+  .gif2 img {
+    width: 400px;
+    height: 500px;
+  }
+
+  .section_p {
+    font-size: 35px;
+  }
+
+  .short_text {
+    display: inline;
+  }
+
+  .header_List {
+    font-size: 200%;
+  }
+
+  .header_Contact {
+    font-size: 300%
+  }
+
+  .header_nav {
+    padding: 25px;
+  }
+
+  .title_unique_skills,
+  .title_myself,
+  .title_things_and_hobbies,
+  .title_favourite_place {
+    font-size: 50px;
+  }
+
+  .font_funfact p,
+  .font_skills_learned p,
+  .font_skills_pursueing p,
+  .font_computer p,
+  .font_basketball p {
+    font-size: 22px;
+  }
+
+  .layout_skills_learned img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .flip-card {
+    float: left;
+  }
+
+  .layout_footer img {
+    width: 50px;
+    height: 50px;
+  }
+  .font_computer img{
+    width:300px;
+    height: 300px;
+  }
+  .HoangNguyen5{
+    display: inline;
+  }
+}
+
+@media (max-width: 1083px) {
+  .header_List {
+    font-size: 180%;
+  }
+  .basketball1 img{
+    width: 40%;
+    height: 40%;
+  }
+
+  .header_Contact {
+    font-size: 240%;
+  }
+
+  .header_nav {
+    padding: 35px;
+  }
+
+  .icon img {
+    width: 35px;
+  }
+
+  .short_text {
+    display: inline;
+  }
+
+  .section_p {
+    font-size: 23px;
+  }
+
+  .gif2 img {
+    width: 270px;
+    height: 340px;
+  }
+
+  .full_contact {
+    display: none;
+  }
+
+  .short_contact {
+    display: inline;
+  }
+
+  .title_unique_skills,
+  .title_myself,
+  .title_things_and_hobbies,
+  .title_favourite_place {
+    font-size: 35px;
+  }
+
+  .container_text_footer {
+    right: 40%;
+  }
+  .font_computer img{
+    display: none;
+  }
+  .font_computer p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 725px) {
+  .section_backgroundImage img {
+    width: 300px;
+    height: 300px;
+  }
+  .se
+  .gif2 {
+    display: none;
+  }
+
+  .header_List {
+    font-size: 160%;
+  }
+
+  .header_Contact {
+    font-size: 200%;
+  }
+
+  .icon img {
+    width: 30px;
+  }
+
+  .header_nav {
+    padding: 35px;
+  }
+
+  .short_text {
+    display: inline;
+  }
+
+  .full_place {
+    display: none;
+  }
+
+  .short_place {
+    display: inline;
+  }
+
+  .section_p {
+    font-size: 11px;
+  }
+
+  .title_unique_skills,
+  .title_myself,
+  .title_things_and_hobbies,
+  .title_favourite_place {
+    font-size: 25px;
+  }
+
+  .font_funfact p,
+  .font_skills_learned p,
+  .font_skills_pursueing p,
+  .font_computer p,
+  .font_basketball p {
+    font-size: 16px;
+  }
+
+  .layout_skills_learned img {
+    width: 200px;
+    height: 200px;
+  }
+  .font_computer img{
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .header_List {
+    font-size: 120%;
+  }
+
+  .flip-card {
+    float: none;
+  }
+
+  .layout_skills_learned img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .font_funfact h3,
+  .font_skills_learned h3,
+  .font_skills_pursueing h3,
+  .font_computer h3,
+  .font_basketball h3 {
+    font-size: 25px;
+  }
+
+  .font_funfact p,
+  .font_skills_learned p,
+  .font_skills_pursueing p,
+  .font_computer p,
+  .font_basketball p {
+    font-size: 12px;
+  }
+  
+
+  .header_Contact {
+    font-size: 140%;
+  }
+
+  .icon img {
+    width: 20px;
+  }
+
+  .header_nav {
+    padding: 40px;
+  }
+
+  .short_text {
+    display: inline;
+  }
+
+  .section_backgroundImage img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .section_p {
+    font-size: 7.1px;
+  }
+
+  .layout_footer img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+
+}
+
+@media (max-width: 336px) {
+  .header_List {
+    font-size: 90%;
+  }
+
+  .header_Contact {
+    font-size: 110%;
+  }
+
+  .icon img {
+    width: 15px;
+  }
+
+  .header_nav {
+    padding: 45px;
+  }
+
+  .short_text {
+    display: inline;
+  }
+  .title_favourite_place,
+  .title_myself,
+  .title_unique_skills,
+  .title_things_and_hobbies{
+    font-size: 20px;
+  }
+}
+
 
 .header_List {
   display: flex;
   justify-content: space-evenly;
   width: 60%;
-  padding-right: 100px;
-  font-size: 30px;
   flex-wrap: wrap;
   list-style: none;
   transition: 0.3s ease;
@@ -87,6 +555,7 @@ h3 {
 .header_List li a {
   text-shadow: 0 0 8px #FFD700, 0 0 16px #FFD700;
   transition: text-shadow 0.3s;
+  display: inline;
 }
 
 .header_List li a:hover {
@@ -108,6 +577,7 @@ h3 {
   transition: text-shadow 0.3s;
   text-decoration: none;
   color: #F5F5F5;
+  display: inline;
 }
 
 .header_Contact a:hover {
@@ -116,10 +586,9 @@ h3 {
 }
 
 .header_Contact {
-  font-size: 45px;
+  /* font-size: 45px; */
   flex-wrap: wrap;
   list-style: none;
-
 }
 
 @keyframes header {
@@ -145,8 +614,6 @@ h3 {
 }
 
 .section_p {
-  font-family: "Montserrat";
-  font-size: 35px;
   color: #f5f5f5;
 }
 
@@ -174,8 +641,6 @@ html {
 }
 
 .section_backgroundImage img {
-  width: 400px;
-  height: 396px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #D4Af37;
@@ -184,6 +649,7 @@ html {
 .highlight {
   color: #D4Af37;
   font-style: italic;
+  display: inline;
 }
 
 .border {
@@ -201,13 +667,13 @@ html {
   padding: 40px;
   justify-content: space-evenly;
   align-items: center;
-  /* gap: 50px; */
+
 
 }
 
 .education img,
 .dailylife img,
-.font_basketball img {
+.font_basketball img{
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -216,6 +682,8 @@ html {
   border: 5px solid #facc15;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+  
 
 
 .ethnicity img:first-of-type:hover,
@@ -227,10 +695,6 @@ html {
   box-shadow: 0 0 20px rgba(250, 204, 21, 0.8);
 }
 
-.luxury_watch {
-  /* justify-self: right; */
-  justify-items: right;
-}
 
 @keyframes glow {
   from {
@@ -246,25 +710,24 @@ html {
   position: absolute;
   width: 300px;
   height: auto;
-  top: 1700px;
-  right: 50px;
+  top: 200%;
+  right: 5%;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 .section_myself {
-  top: auto;
   display: flex;
   gap: 170px;
   justify-content: space-evenly;
-
+  flex-wrap: wrap;
 }
 
 .ethnicity,
 .dailylife,
 .education {
   width: 300px;
-
 }
+
 
 .text_box {
   background: #111;
@@ -300,17 +763,22 @@ html {
 }
 
 .gif2 img {
-  width: 400px;
-  height: 500px;
+
   object-fit: cover;
 }
 
 .font_computer {
   background-color: #121212;
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 60px;
-  padding: 80px;
+  padding: 30px;
+  /* width: 100%; */
+}
+.font_computer p{
+  color: #F5F5F5;
+  text-align: center;
+  padding: auto;
 }
 
 .font_basketball {
@@ -328,7 +796,8 @@ html {
   font-size: 20px;
   margin: 0 200px 0px 200px;
 }
-.font_plan img{
+
+.font_plan img {
   width: 300px;
   height: auto;
   border-radius: 20%;
@@ -336,40 +805,46 @@ html {
   border: 5px solid #facc15;
   animation: glow 2s ease-in-out infinite alternate;
 }
+
 .font_plan {
   display: flex;
   flex-direction: row-reverse;
   gap: 30px;
   padding: 200px 0 100px 0;
 }
+
 .font_plan table tr th {
   color: #D4Af37;
   font-size: 24px;
 }
-.sticker_plane{
+
+.sticker_plane {
   position: absolute;
   right: 500px;
   top: 1450px;
 }
-.sticker_halongbay{
+
+.sticker_halongbay {
   position: absolute;
-  left:500px;
+  left: 500px;
   top: 1450px;
 }
-.sticker_yacht{
+
+.sticker_yacht {
   position: absolute;
-  right:80px;
+  right: 80px;
   top: 2000px;
   transform: rotate(-5deg)
 }
 
 .sticker_halongbay img,
 .sticker_plane img,
-.sticker_yacht img{
+.sticker_yacht img {
   height: auto;
   width: 200px;
   object-fit: cover;
 }
+
 .font_plan table tr td {
   color: #f5f5f5;
   font-size: 20px;
@@ -399,7 +874,6 @@ table td:first-child {
 .font_computer p,
 .font_basketball p {
   color: #F5F5F5;
-  font-size: 22px;
 }
 
 .font_funfact h3,
@@ -408,7 +882,6 @@ table td:first-child {
 .font_computer h3,
 .font_basketball h3 {
   color: #D4Af37;
-  font-size: 36px;
   text-align: center;
 }
 
@@ -426,8 +899,6 @@ table td:first-child {
 
 .basketball1 {
   position: absolute;
-  left: 0px;
-  top: 1100px;
 }
 
 .button {
@@ -450,8 +921,7 @@ table td:first-child {
 }
 
 .basketball1 img {
-  width: 200px;
-  height: 200px;
+
   object-fit: cover;
 }
 
@@ -534,7 +1004,6 @@ table td:first-child {
 .title_things_and_hobbies,
 .title_favourite_place {
   background-color: #FFD700;
-  font-size: 50px;
   color: #0D0D0D;
   border: solid 10px #D4Af37;
   padding: 10px;
@@ -546,10 +1015,11 @@ table td:first-child {
   gap: 20px;
 
 }
+* {
+  outline: 1px solid red;
+}
 
 .layout_skills_learned img {
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   justify-self: center;
@@ -557,17 +1027,7 @@ table td:first-child {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.font_skills_pursueing img {
-  width: 250px;
-  height: auto;
-  border-radius: 5%;
-  object-fit: cover;
-  justify-content: center;
-  border: 5px solid #facc15;
-  float: left;
-  margin: 0 20px 20px 0;
-  animation: glow 2s ease-in-out infinite alternate;
-}
+
 
 .font_skills_pursueing p {
   text-align: justify;
@@ -575,18 +1035,12 @@ table td:first-child {
 
 footer {
   background-color: #0A0A0A;
-  padding: 50px;
-}
-
-.layout_footer {
-  display: flex;
+  padding: 50px 0 20px 0;
 }
 
 .layout_footer img {
-  width: 50px;
-  height: 50px;
   object-fit: cover;
-  transition: 0.4ease;
+  transition: 0.4s ease-out;
 }
 
 .layout_footer img:hover {
@@ -602,10 +1056,11 @@ footer {
 }
 
 .container_text_footer {
-  margin-left: 800px;
-  display: inline;
-  flex-wrap: wrap;
+  margin-left: 50px;
+}
 
+.number_phone {
+  margin-left: 50px;
 }
 
 
@@ -662,5 +1117,115 @@ footer {
 @keyframes blink {
   50% {
     border-color: transparent
+  }
+}
+
+.font_skills_pursueing img {
+  width: 250px;
+  height: 300px;
+  border-radius: 5%;
+  object-fit: cover;
+  justify-content: center;
+  border: 5px solid #facc15;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 0 20px 20px 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F5F5F5;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.flip-card-back {
+  background-color: #121212;
+  transform: rotateY(180deg);
+  border: 5px solid #facc15;
+  animation: glow 2s ease-in-out infinite alternate;
+  border-radius: 5%;
+}
+
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 1s forwards;
+}
+
+
+#loading img {
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite, fadeImg 4s forwards;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeImg {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
