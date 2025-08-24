@@ -5,7 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="web.css">
-    <title>Nguyen Hoang Hung</title>
+    <title>Hoang Nguyen Website</title>
+
+    <style>
+        footer {
+            background-color: #0A0A0A;
+        }
+
+        #loading img {
+            width: 100px;
+            height: 100px;
+            animation: spin 2s linear infinite, fadeImg 4s forwards;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeImg {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        #loading {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeOut 1s forwards;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        h3,
+        h1,
+        p {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        }
+
+        .header_nav {
+            position: fixed;
+        }
+
+        #Title {
+            color: #0D0D0D;
+        }
+
+        li span {
+            color: #D4Af37;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,7 +122,7 @@
 
     <section class="letter-drop">
         <div class="things_and_hobbies " style="margin-top:100px;">
-            <div class="title_things_and_hobbies ">
+            <div class="title_things_and_hobbies " id="Title">
                 <h3>Things and Hobbies</h3>
             </div>
             <div class="border"></div>
@@ -87,9 +173,11 @@
             </div>
             <div class="font_basketball">
                 <div>
-                    <h3>
-                        Basketball
-                    </h3>
+                    <a href="https://en.wikipedia.org/wiki/Basketball" style="text-decoration:none">
+                        <h3>
+                            Basketball
+                        </h3>
+                    </a>
                 </div>
                 <div>
                     <img src="z6929956260432_61803432e62d9bd55ed6ea6ff5b0b621.jpg" style="justify-self:center">
@@ -138,7 +226,7 @@
             </div>
 
             <div class="container_text_footer">
-                <p style="color:#C5A880; font-size:36px;">ALDRICH SOLAN</p>
+                <p class="MyName">ALDRICH SOLAN</p>
             </div>
         </div>
         <div class="number_phone">
