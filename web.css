@@ -746,23 +746,18 @@
 
 .header_List li a {
   text-shadow: 0 0 8px #FFD700, 0 0 16px #FFD700;
-  transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
   display: inline;
+  text-decoration: none;
+  color: #F5F5F5;
 }
 
 .header_List li a:hover {
   text-shadow: 0 0 16px #FFD700, 0 0 32px #FFD700;
   color: #FFD700;
+  filter: brightness(1.3);
 }
 
-.header_List:hover {
-  filter: brightness(1.5);
-}
-
-.header_List li a {
-  text-decoration: none;
-  color: #F5F5F5;
-}
 
 .header_Contact a {
   text-shadow: 0 0 8px #FFD700, 0 0 16px #FFD700;
@@ -778,7 +773,6 @@
 }
 
 .header_Contact {
-  /* font-size: 45px; */
   flex-wrap: wrap;
   list-style: none;
 }
@@ -1066,7 +1060,6 @@ table td:first-child {
 .button {
   position: absolute;
   left: 50px;
-  /* background-color: #D4Af37; */
 }
 
 .button button {
